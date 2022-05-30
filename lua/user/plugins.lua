@@ -96,5 +96,7 @@ return require('packer').startup(function(use)
     "catppuccin/nvim",
     as = "catppuccin"
   }
+  -- 状态栏
+  use "nvim-lualine/lualine.nvim"
 
 end)
