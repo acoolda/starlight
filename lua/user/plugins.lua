@@ -98,5 +98,9 @@ return require('packer').startup(function(use)
   }
   -- 状态栏
   use "nvim-lualine/lualine.nvim"
-
+  -- easymotion 
+  use {
+    "phaazon/hop.nvim",
+    branch = "v1",
+  }
 end)
