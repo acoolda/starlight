@@ -39,7 +39,6 @@ packer.init {
     -- end,
   },
 }
-
 -- packer用法
 -- use {
 --   "myusername/example",        -- The plugin location string
@@ -103,4 +102,27 @@ return require('packer').startup(function(use)
     "phaazon/hop.nvim",
     branch = "v1",
   }
+  -- 对齐线
+  use "lukas-reineke/indent-blankline.nvim"
+  -- 括号成对
+  use "windwp/nvim-autopairs"
+  -- cmp 自动补全插件
+  use "hrsh7th/nvim-cmp"
+  use "hrsh7th/cmp-buffer"
+  use "hrsh7th/cmp-path"
+  use "hrsh7th/cmp-cmdline"
+  use "hrsh7th/cmp-nvim-lsp"
+
+  use "saadparwaiz1/cmp_luasnip"
+ 
+  -- lsp server
+  use "neovim/nvim-lspconfig"
+  use "williamboman/nvim-lsp-installer"
+  use "ray-x/lsp_signature.nvim"
+  use "stevearc/aerial.nvim"
+
+  -- snippet
+  use "L3MON4D3/LuaSnip"
+  use "rafamadriz/friendly-snippets"
+
 end)
