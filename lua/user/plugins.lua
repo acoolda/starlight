@@ -125,4 +125,18 @@ return require('packer').startup(function(use)
   use "L3MON4D3/LuaSnip"
   use "rafamadriz/friendly-snippets"
 
+ -- 经典插件
+  use "tpope/vim-repeat"
+  use "tpope/vim-surround"
+  -- 颜色展示(rgb颜色展示)
+  use "norcalli/nvim-colorizer.lua"
+  -- todoList
+  use "folke/todo-comments.nvim"
+  -- 注释
+  use "terrortylor/nvim-comment"
+  -- 匹配增强，能匹配同一个代码block
+  use "andymass/vim-matchup"
+
+  -- treesitter 语法高亮
+  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 end)
