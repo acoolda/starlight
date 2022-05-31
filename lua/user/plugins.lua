@@ -148,4 +148,16 @@ return require('packer').startup(function(use)
   
   -- code action
   use "kosayoda/nvim-lightbulb"
+
+  -- telescope 
+  use {
+  'nvim-telescope/telescope.nvim',
+  requires = { {'nvim-lua/plenary.nvim'} }
+}
+  use "nvim-telescope/telescope-ui-select.nvim"
+  use "nvim-telescope/telescope-live-grep-raw.nvim"
+  use {
+    "nvim-telescope/telescope-fzf-native.nvim",
+    run = "make",
+  }
 end)

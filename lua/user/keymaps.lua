@@ -56,4 +56,7 @@ keymap("v", ">", ">gv", opts)
 keymap("i", "jk", "<ESC>", opts)
 keymap("v", "p", '"_dP', opts)
 
-
+-- telescope
+-- 查找文件
+keymap("n", "<leader>ff","<cmd>lua require('telescope.builtin').find_files()<CR>",opts)
+keymap("n", "<leader>fg","<cmd>lua require('telescope.builtin').live_grep()<CR>",opts)
