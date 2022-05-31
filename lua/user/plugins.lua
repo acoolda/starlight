@@ -112,6 +112,7 @@ return require('packer').startup(function(use)
   use "hrsh7th/cmp-path"
   use "hrsh7th/cmp-cmdline"
   use "hrsh7th/cmp-nvim-lsp"
+  use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
 
   use "saadparwaiz1/cmp_luasnip"
  
@@ -139,4 +140,12 @@ return require('packer').startup(function(use)
 
   -- treesitter 语法高亮
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+  use "nvim-treesitter/nvim-treesitter-textobjects"
+  use "romgrk/nvim-treesitter-context"
+
+  -- 终端
+  use "akinsho/toggleterm.nvim"
+  
+  -- code action
+  use "kosayoda/nvim-lightbulb"
 end)
