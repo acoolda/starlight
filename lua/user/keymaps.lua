@@ -36,7 +36,9 @@ keymap("n", "<leader>q", ":q<cr>", opts)
 -- delete cur buffer
 keymap("n", "<leader>d", ":bdelete<cr>", opts)
 keymap("n", "<leader>D", ":bdelete<cr>", opts)
-
+-- goto next/previous buffer 
+keymap("n","H",":bprevious<cr>",opts)
+keymap("n","L",":bnext<cr>",opts)
 -- keymap("n", "n", "nzzzv", opts)
 -- keymap("n", "N", "Nzzzv", opts)
 -- keymap("n", "J", "mzJ`z", opts)
