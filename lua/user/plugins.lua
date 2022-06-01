@@ -75,29 +75,29 @@ packer.init {
 
 -- 插件安装
 return require('packer').startup(function(use)
-	-- Packer can manage itself
-	use 'wbthomason/packer.nvim'
-	-- 基础插件，很多插件依赖这几个插件
-	use "lewis6991/impatient.nvim" -- Speed up loading Lua modules    TODO: figure out how to use this
-  	use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
+  -- Packer can manage itself
+  use 'wbthomason/packer.nvim'
+  -- 基础插件，很多插件依赖这几个插件
+  use "lewis6991/impatient.nvim" -- Speed up loading Lua modules    TODO: figure out how to use this
+  use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "rcarriga/nvim-notify" -- notify
   use "kyazdani42/nvim-web-devicons" -- icons
 
-    use "kyazdani42/nvim-tree.lua" -- file explore
+  use "kyazdani42/nvim-tree.lua" -- file explore
   use {
     "akinsho/bufferline.nvim", -- tab
     tag = "v1.2.0",
   }
 
   use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
-  use { 
+  use {
     "catppuccin/nvim",
     as = "catppuccin"
   }
   -- 状态栏
   use "nvim-lualine/lualine.nvim"
-  -- easymotion 
+  -- easymotion
   use {
     "phaazon/hop.nvim",
     branch = "v1",
@@ -112,10 +112,10 @@ return require('packer').startup(function(use)
   use "hrsh7th/cmp-path"
   use "hrsh7th/cmp-cmdline"
   use "hrsh7th/cmp-nvim-lsp"
-  use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
+  use { 'tzachar/cmp-tabnine', run = './install.sh', requires = 'hrsh7th/nvim-cmp' }
 
   use "saadparwaiz1/cmp_luasnip"
- 
+
   -- lsp server
   use "neovim/nvim-lspconfig"
   use "williamboman/nvim-lsp-installer"
@@ -126,7 +126,7 @@ return require('packer').startup(function(use)
   use "L3MON4D3/LuaSnip"
   use "rafamadriz/friendly-snippets"
 
- -- 经典插件
+  -- 经典插件
   use "tpope/vim-repeat"
   use "tpope/vim-surround"
   -- 颜色展示(rgb颜色展示)
@@ -145,11 +145,11 @@ return require('packer').startup(function(use)
 
   -- 终端
   use "akinsho/toggleterm.nvim"
-  
+
   -- code action
   use "kosayoda/nvim-lightbulb"
 
-  -- telescope 
+  -- telescope
   use 'nvim-telescope/telescope.nvim'
 
   use "nvim-telescope/telescope-ui-select.nvim"
@@ -162,4 +162,11 @@ return require('packer').startup(function(use)
   -- use "nvim-telescope/telescope-media-files.nvim"
   -- which key
   use "folke/which-key.nvim"
+  -- hight light v mode
+  use "Pocco81/HighStr.nvim"
+  -- 日志查看
+  use "mtdl9/vim-log-highlighting"
+
+  -- sinp run
+  use { 'michaelb/sniprun', run = 'bash ./install.sh' }
 end)
