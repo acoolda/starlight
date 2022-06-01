@@ -150,14 +150,16 @@ return require('packer').startup(function(use)
   use "kosayoda/nvim-lightbulb"
 
   -- telescope 
-  use {
-  'nvim-telescope/telescope.nvim',
-  requires = { {'nvim-lua/plenary.nvim'} }
-}
+  use 'nvim-telescope/telescope.nvim'
+
   use "nvim-telescope/telescope-ui-select.nvim"
   use "nvim-telescope/telescope-live-grep-raw.nvim"
   use {
     "nvim-telescope/telescope-fzf-native.nvim",
     run = "make",
   }
+  -- 预览图片
+  -- use "nvim-telescope/telescope-media-files.nvim"
+  -- which key
+  use "folke/which-key.nvim"
 end)

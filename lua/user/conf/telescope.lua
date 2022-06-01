@@ -161,7 +161,7 @@ telescope.setup {
   pickers = {
     find_files = {
       theme = "dropdown",
-      previewer = false,
+      -- previewer = 15,
       -- find_command = { "find", "-type", "f" },
       find_command = {"fd"},
     },
@@ -189,24 +189,24 @@ telescope.setup {
     -- !fire	inverse-exact-match	Items that do not include fire
     -- !^music	inverse-prefix-exact-match	Items that do not start with music
     -- !.mp3$	inverse-suffix-exact-match	Items that do not end with .mp3
-    fzf = {
-      fuzzy = true,                    -- false will only do exact matching
-      override_generic_sorter = true,  -- override the generic sorter
-      override_file_sorter = true,     -- override the file sorter
-      case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
-      -- the default case_mode is "smart_case"
-    },
-    ["ui-select"] = {
-      require("telescope.themes").get_dropdown {
-        -- even more opts
-      }
-    },
+    -- fzf = {
+    --   fuzzy = true,                    -- false will only do exact matching
+    --   override_generic_sorter = true,  -- override the generic sorter
+    --   override_file_sorter = true,     -- override the file sorter
+    --   case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
+    --   -- the default case_mode is "smart_case"
+    -- },
+    -- ["ui-select"] = {
+    --   require("telescope.themes").get_dropdown {
+    --     -- even more opts
+    --   }
+    -- },
   },
 }
 
 -- telescope.load_extension("frecency")
-telescope.load_extension('fzf')
-telescope.load_extension("ui-select")
+-- telescope.load_extension('fzf')
+-- telescope.load_extension("ui-select")
 -- telescope.load_extension('dap')
 -- telescope.load_extension('vim_bookmarks')
 -- load project extension. see project.lua file
