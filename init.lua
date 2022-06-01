@@ -9,3 +9,6 @@ require 'user.conf'
 -- 主题
 require 'user.colorscheme'
 
+-- lsp
+require 'user.lsp'
+
