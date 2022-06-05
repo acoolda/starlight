@@ -114,6 +114,8 @@ return require('packer').startup(function(use)
   use "hrsh7th/cmp-nvim-lsp"
   use { 'tzachar/cmp-tabnine', run = './install.sh', requires = 'hrsh7th/nvim-cmp' }
 
+  use "f3fora/cmp-spell" -- 拼写检查
+  use "ray-x/cmp-treesitter"
   use "saadparwaiz1/cmp_luasnip"
 
   -- lsp server
@@ -152,12 +154,16 @@ return require('packer').startup(function(use)
   -- telescope
   use 'nvim-telescope/telescope.nvim'
 
-  use "nvim-telescope/telescope-ui-select.nvim"
-  use "nvim-telescope/telescope-live-grep-raw.nvim"
+  use "nvim-telescope/telescope-ui-select.nvim" -- TODO: not work
+  use "nvim-telescope/telescope-live-grep-raw.nvim" -- HACK: not work
   use {
-    "nvim-telescope/telescope-fzf-native.nvim",
+    "nvim-telescope/telescope-fzf-native.nvim", -- TODO: not work
     run = "make",
   }
+  -- bookmark
+  use "MattesGroeger/vim-bookmarks"
+  use "tom-anders/telescope-vim-bookmarks.nvim"
+
   -- 预览图片
   -- use "nvim-telescope/telescope-media-files.nvim"
   -- which key
@@ -169,4 +175,16 @@ return require('packer').startup(function(use)
 
   -- sinp run
   use { 'michaelb/sniprun', run = 'bash ./install.sh' }
+
+  --查找替换功能
+  use "nvim-pack/nvim-spectre"
+
+  -- 项目管理
+  use "ahmedkhalf/project.nvim"
+
+  -- 欢迎界面
+  use "goolord/alpha-nvim"
+
+  -- winshift
+  use "sindrets/winshift.nvim"
 end)

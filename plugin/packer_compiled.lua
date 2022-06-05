@@ -69,6 +69,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["HighStr.nvim"] = {
+    loaded = true,
+    path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/HighStr.nvim",
+    url = "https://github.com/Pocco81/HighStr.nvim"
+  },
   LuaSnip = {
     loaded = true,
     path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/LuaSnip",
@@ -78,6 +83,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/aerial.nvim",
     url = "https://github.com/stevearc/aerial.nvim"
+  },
+  ["alpha-nvim"] = {
+    loaded = true,
+    path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/alpha-nvim",
+    url = "https://github.com/goolord/alpha-nvim"
   },
   ["bufferline.nvim"] = {
     loaded = true,
@@ -109,10 +119,20 @@ _G.packer_plugins = {
     path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
+  ["cmp-spell"] = {
+    loaded = true,
+    path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/cmp-spell",
+    url = "https://github.com/f3fora/cmp-spell"
+  },
   ["cmp-tabnine"] = {
     loaded = true,
     path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/cmp-tabnine",
     url = "https://github.com/tzachar/cmp-tabnine"
+  },
+  ["cmp-treesitter"] = {
+    loaded = true,
+    path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/cmp-treesitter",
+    url = "https://github.com/ray-x/cmp-treesitter"
   },
   cmp_luasnip = {
     loaded = true,
@@ -194,6 +214,11 @@ _G.packer_plugins = {
     path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/nvim-notify",
     url = "https://github.com/rcarriga/nvim-notify"
   },
+  ["nvim-spectre"] = {
+    loaded = true,
+    path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/nvim-spectre",
+    url = "https://github.com/nvim-pack/nvim-spectre"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
@@ -234,6 +259,16 @@ _G.packer_plugins = {
     path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
   },
+  ["project.nvim"] = {
+    loaded = true,
+    path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/project.nvim",
+    url = "https://github.com/ahmedkhalf/project.nvim"
+  },
+  sniprun = {
+    loaded = true,
+    path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/sniprun",
+    url = "https://github.com/michaelb/sniprun"
+  },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
     path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
@@ -249,6 +284,11 @@ _G.packer_plugins = {
     path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/telescope-ui-select.nvim",
     url = "https://github.com/nvim-telescope/telescope-ui-select.nvim"
   },
+  ["telescope-vim-bookmarks.nvim"] = {
+    loaded = true,
+    path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/telescope-vim-bookmarks.nvim",
+    url = "https://github.com/tom-anders/telescope-vim-bookmarks.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -263,6 +303,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
+  },
+  ["vim-bookmarks"] = {
+    loaded = true,
+    path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/vim-bookmarks",
+    url = "https://github.com/MattesGroeger/vim-bookmarks"
+  },
+  ["vim-log-highlighting"] = {
+    loaded = true,
+    path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/vim-log-highlighting",
+    url = "https://github.com/mtdl9/vim-log-highlighting"
   },
   ["vim-matchup"] = {
     loaded = true,

@@ -209,4 +209,5 @@ telescope.setup {
 -- telescope.load_extension("ui-select")
 -- telescope.load_extension('dap')
 -- telescope.load_extension('vim_bookmarks')
+telescope.load_extension('projects')
 -- load project extension. see project.lua file
