@@ -63,3 +63,26 @@ keymap("v", "p", '"_dP', opts)
 -- 查找文件
 keymap("n", "<leader>ff","<cmd>lua require('telescope.builtin').find_files()<CR>",opts)
 keymap("n", "<leader>fg","<cmd>lua require('telescope.builtin').live_grep()<CR>",opts)
+
+-- bookmark
+keymap("n", "ma", "<cmd>Telescope vim_bookmarks current_file<cr>", opts)
+keymap("n", "mA", "<cmd>Telescope vim_bookmarks all<cr>", opts)
+
+
+-- calltree
+keymap("n", "<leader>in", "<cmd>lua vim.lsp.buf.incoming_calls()<cr>", opts)
+
+-- dap debugger相关
+
+-- debug
+keymap("n", "<leader>db", "<cmd>lua require'dap'.toggle_breakpoint()<cr>", opts)
+keymap("n", "<leader>dB", "<cmd>lua require'dap'.set_breakpoint(vim.fn.input '[Condition] > ')<cr>", opts)
+-- keymap("n", "<leader>dr", "lua require'dap'.repl.open()<cr>", opts)
+keymap("n", "<leader>dl", "<cmd>lua require'dap'.run_last()<cr>", opts)
+keymap('n', '<F10>', '<cmd>lua require"user.dap.dap-util".reload_continue()<CR>', opts)
+keymap("n", "<F4>", "<cmd>lua require'dap'.terminate()<cr>", opts)
+keymap("n", "<F5>", "<cmd>lua require'dap'.continue()<cr>", opts)
+keymap("n", "<F6>", "<cmd>lua require'dap'.step_over()<cr>", opts)
+keymap("n", "<F7>", "<cmd>lua require'dap'.step_into()<cr>", opts)
+keymap("n", "<F8>", "<cmd>lua require'dap'.step_out()<cr>", opts)
+keymap("n", "K", "<cmd>lua require'dapui'.eval()<cr>", opts)

@@ -144,10 +144,30 @@ _G.packer_plugins = {
     path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/colorschemes",
     url = "https://github.com/lunarvim/colorschemes"
   },
+  ["dap-buddy.nvim"] = {
+    loaded = true,
+    path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/dap-buddy.nvim",
+    url = "https://github.com/Pocco81/dap-buddy.nvim"
+  },
+  ["diffview.nvim"] = {
+    loaded = true,
+    path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/diffview.nvim",
+    url = "https://github.com/sindrets/diffview.nvim"
+  },
+  ["fidget.nvim"] = {
+    loaded = true,
+    path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/fidget.nvim",
+    url = "https://github.com/j-hui/fidget.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
+  },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
   },
   ["hop.nvim"] = {
     loaded = true,
@@ -164,6 +184,16 @@ _G.packer_plugins = {
     path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
+  ["litee-calltree.nvim"] = {
+    loaded = true,
+    path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/litee-calltree.nvim",
+    url = "https://github.com/ldelossa/litee-calltree.nvim"
+  },
+  ["litee.nvim"] = {
+    loaded = true,
+    path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/litee.nvim",
+    url = "https://github.com/ldelossa/litee.nvim"
+  },
   ["lsp_signature.nvim"] = {
     loaded = true,
     path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/lsp_signature.nvim",
@@ -173,6 +203,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["neovim-session-manager"] = {
+    loaded = true,
+    path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/neovim-session-manager",
+    url = "https://github.com/Shatur/neovim-session-manager"
   },
   ["nvim-autopairs"] = {
     loaded = true,
@@ -193,6 +228,21 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/nvim-comment",
     url = "https://github.com/terrortylor/nvim-comment"
+  },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
+  },
+  ["nvim-dap-ui"] = {
+    loaded = true,
+    path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/nvim-dap-ui",
+    url = "https://github.com/rcarriga/nvim-dap-ui"
+  },
+  ["nvim-dap-virtual-text"] = {
+    loaded = true,
+    path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/nvim-dap-virtual-text",
+    url = "https://github.com/theHamsta/nvim-dap-virtual-text"
   },
   ["nvim-lightbulb"] = {
     loaded = true,
@@ -269,6 +319,11 @@ _G.packer_plugins = {
     path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/sniprun",
     url = "https://github.com/michaelb/sniprun"
   },
+  ["telescope-dap.nvim"] = {
+    loaded = true,
+    path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/telescope-dap.nvim",
+    url = "https://github.com/nvim-telescope/telescope-dap.nvim"
+  },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
     path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
@@ -304,6 +359,11 @@ _G.packer_plugins = {
     path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
   },
+  ["trouble.nvim"] = {
+    loaded = true,
+    path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/trouble.nvim",
+    url = "https://github.com/folke/trouble.nvim"
+  },
   ["vim-bookmarks"] = {
     loaded = true,
     path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/vim-bookmarks",
@@ -329,10 +389,25 @@ _G.packer_plugins = {
     path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/vim-surround",
     url = "https://github.com/tpope/vim-surround"
   },
+  ["vim-test"] = {
+    loaded = true,
+    path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/vim-test",
+    url = "https://github.com/vim-test/vim-test"
+  },
+  ["vim-ultest"] = {
+    loaded = true,
+    path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/vim-ultest",
+    url = "https://github.com/rcarriga/vim-ultest"
+  },
   ["which-key.nvim"] = {
     loaded = true,
     path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/which-key.nvim",
     url = "https://github.com/folke/which-key.nvim"
+  },
+  ["winshift.nvim"] = {
+    loaded = true,
+    path = "/Users/acooldaye/.local/share/nvim/site/pack/packer/start/winshift.nvim",
+    url = "https://github.com/sindrets/winshift.nvim"
   }
 }
 

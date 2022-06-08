@@ -83,13 +83,13 @@ telescope.setup {
     prompt_prefix = " ",
     selection_caret = " ",
     path_display = {
-      shorten= {
+      shorten = {
         -- e.g. for a path like
         --   `alpha/beta/gamma/delta.txt`
         -- setting `path_display.shorten = { len = 1, exclude = {1, -1} }`
         -- will give a path like:
         --   `alpha/b/g/delta.txt`
-        len = 3, exclude = {1, -1}
+        len = 3, exclude = { 1, -1 }
       },
     },
 
@@ -160,10 +160,10 @@ telescope.setup {
   },
   pickers = {
     find_files = {
-      theme = "dropdown",
+      -- theme = "dropdown",
       -- previewer = 15,
       -- find_command = { "find", "-type", "f" },
-      find_command = {"fd"},
+      find_command = { "fd" },
     },
 
     -- Default configuration for builtin pickers goes here:
@@ -196,18 +196,23 @@ telescope.setup {
     --   case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
     --   -- the default case_mode is "smart_case"
     -- },
-    -- ["ui-select"] = {
-    --   require("telescope.themes").get_dropdown {
-    --     -- even more opts
-    --   }
-    -- },
+    ["ui-select"] = {
+      require("telescope.themes").get_dropdown {
+        -- even more opts
+      }
+    },
+    -- live_grep_raw
+    live_grep_raw = {
+      auto_quoting = true
+    }
   },
 }
 
 -- telescope.load_extension("frecency")
 -- telescope.load_extension('fzf')
--- telescope.load_extension("ui-select")
+telescope.load_extension("ui-select")
+telescope.load_extension("live_grep_raw")
 -- telescope.load_extension('dap')
--- telescope.load_extension('vim_bookmarks')
+telescope.load_extension('vim_bookmarks')
 telescope.load_extension('projects')
 -- load project extension. see project.lua file

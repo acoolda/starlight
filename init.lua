@@ -11,4 +11,5 @@ require 'user.colorscheme'
 
 -- lsp
 require 'user.lsp'
-
+-- todo 暂时有问题
+require 'user.dap'

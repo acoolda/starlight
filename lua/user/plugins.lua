@@ -121,6 +121,7 @@ return require('packer').startup(function(use)
   -- lsp server
   use "neovim/nvim-lspconfig"
   use "williamboman/nvim-lsp-installer"
+  use "j-hui/fidget.nvim" -- show lsp progress
   use "ray-x/lsp_signature.nvim"
   use "stevearc/aerial.nvim"
 
@@ -154,8 +155,8 @@ return require('packer').startup(function(use)
   -- telescope
   use 'nvim-telescope/telescope.nvim'
 
-  use "nvim-telescope/telescope-ui-select.nvim" -- TODO: not work
-  use "nvim-telescope/telescope-live-grep-raw.nvim" -- HACK: not work
+  use "nvim-telescope/telescope-ui-select.nvim"
+  use "nvim-telescope/telescope-live-grep-raw.nvim"
   use {
     "nvim-telescope/telescope-fzf-native.nvim", -- TODO: not work
     run = "make",
@@ -187,4 +188,42 @@ return require('packer').startup(function(use)
 
   -- winshift
   use "sindrets/winshift.nvim"
+
+  -- debug插件
+  use "mfussenegger/nvim-dap"
+  -- dap debug 管理工具
+
+  -- 原作者删除自己的仓库
+  -- use {
+  --   "Pocco81/dap-buddy.nvim",
+  --   run = 'make',
+  -- }
+
+  use "ravenxrz/DAPInstall.nvim" -- help us install several debuggers
+
+  -- virtual text
+  use "theHamsta/nvim-dap-virtual-text"
+  use "rcarriga/nvim-dap-ui"
+  use "nvim-telescope/telescope-dap.nvim"
+
+  -- 调用树
+  use "ldelossa/litee.nvim"
+  use "ldelossa/litee-calltree.nvim"
+
+  -- 单元测试
+  use "vim-test/vim-test"
+  use {
+    "rcarriga/vim-ultest",
+    run = ":UpdateRemotePlugins"
+  }
+  -- git相关功能
+  use {
+    "lewis6991/gitsigns.nvim",
+    -- tag = "v0.4",
+  }
+  use 'sindrets/diffview.nvim'
+  -- trouble
+  use "folke/trouble.nvim"
+  -- session
+  use "Shatur/neovim-session-manager"
 end)
